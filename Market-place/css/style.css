@@ -1,0 +1,67 @@
+#container {
+  display: grid;
+  width: 100%;
+  gap: 2rem;
+  grid-auto-flow: dense;
+  padding: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#container img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+#container h3 {
+  font-size: 14px;
+}
+
+.border {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px rgba(183, 183, 183, 0.457);
+  transition: all 0.1s linear;
+}
+
+
+
+/* Custom Button Styles */
+.btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF; /* Background color */
+      color: #fff; /* Text color */
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .btn:hover {
+      transform: scale(1.05); /* Scale up on hover */
+    }
+    
+    /* Optional: Add more styles for different button states (active, disabled, etc.) */
+    .btn:active {
+      background-color: #004198; /* Active state background color */
+    }
+    
+    /* Example for a disabled button */
+    .btn[disabled] {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    
+    /* Example for a different button color variation */
+    .btn.secondary {
+      background-color: #28a745;
+    }
+    
+    /* Example for a large button */
+    .btn.large {
+      padding: 12
+    }
